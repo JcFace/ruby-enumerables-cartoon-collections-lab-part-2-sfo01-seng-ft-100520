@@ -18,12 +18,11 @@ def long_planeteer_calls(planeteer_calls)
 end
 
 def find_valid_calls(planeteer_calls)
-  first_valid_call = ""
+  first_valid_call = nil
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   planeteer_calls.find do |element|
     if element == valid_calls
     first_valid_call = element
-    binding.pry
   end
   end
   first_valid_call
