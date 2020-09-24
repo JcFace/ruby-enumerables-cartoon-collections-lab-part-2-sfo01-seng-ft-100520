@@ -16,6 +16,7 @@ def long_planeteer_calls(planeteer_calls)
    element.length > 4
  end 
 end
+require 'pry'
 
 def find_valid_calls(planeteer_calls)
   first_valid_call = ""
