@@ -1,3 +1,4 @@
+require 'pry'
 def square_array(array)
  array.map do |element|
    element * element
@@ -22,6 +23,7 @@ def find_valid_calls(planeteer_calls)
   planeteer_calls.find do |element|
     if element == valid_calls
     first_valid_call = element
+    binding.pry
   end
   end
   first_valid_call
