@@ -20,7 +20,7 @@ def find_valid_calls(planeteer_calls)
   first_valid_call = nil
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   planeteer_calls.find do |element|
-    element == valid_calls
+    if element == valid_calls
     element
   end
 end
